@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^$ public/ [L]
+RewriteRule (.*) public/$1 [L]
+AddHandler application/x-httpd-php73 .php .php5 .php4 .php3

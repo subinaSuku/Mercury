@@ -1,0 +1,25 @@
+[15-May-2021 16:48:42 CST6CDT] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.5.38. in /home/customer/www/dev.itrobes.in/vendor/composer/platform_check.php on line 25
+[15-May-2021 16:49:05 CST6CDT] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.5.38. in /home/customer/www/dev.itrobes.in/vendor/composer/platform_check.php on line 25
+[15-May-2021 16:57:38 CST6CDT] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.5.38. in /home/customer/www/dev.itrobes.in/vendor/composer/platform_check.php on line 25
+[15-May-2021 16:57:51 CST6CDT] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.5.38. in /home/customer/www/dev.itrobes.in/vendor/composer/platform_check.php on line 25
+[15-Aug-2021 17:07:04 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Console\Kernel does not exist in /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('App\\Console\\Ker...')
+#1 /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('App\\Console\\Ker...')
+#2 /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Console\\Ker...', Array, false)
+#3 /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(284): Illuminate\Foundation\Application->resolve('App\\Console\\Ker...', Array, false)
+#4 /home/customer/www/mercury.itrobes.in/public_htm in /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[15-Aug-2021 17:07:26 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Console\Kernel does not exist in /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('App\\Console\\Ker...')
+#1 /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('App\\Console\\Ker...')
+#2 /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Console\\Ker...', Array, false)
+#3 /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(284): Illuminate\Foundation\Application->resolve('App\\Console\\Ker...', Array, false)
+#4 /home/customer/www/mercury.itrobes.in/public_htm in /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[15-Aug-2021 17:07:34 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Console\Kernel does not exist in /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('App\\Console\\Ker...')
+#1 /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('App\\Console\\Ker...')
+#2 /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Console\\Ker...', Array, false)
+#3 /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(284): Illuminate\Foundation\Application->resolve('App\\Console\\Ker...', Array, false)
+#4 /home/customer/www/mercury.itrobes.in/public_htm in /home/customer/www/mercury.itrobes.in/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
