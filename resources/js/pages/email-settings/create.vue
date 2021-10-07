@@ -27,7 +27,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Email Settings</h4>
-                        <form role="form" ref="addCustomerFrom" name="addCustomerFrom"
+                        <form role="form" ref="emailConfigForm" name="emailConfigForm"
                             v-on:submit.prevent="mailsetting">
                             <div class="card-body">
                                 
@@ -133,7 +133,7 @@
                     .then((response) => {
                         console.log(response);
                         this.form = response.data;
-                        this.form.password = response.password;
+                        // this.form.password = response.password;
                     });
             },
 

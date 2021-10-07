@@ -94,6 +94,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::group(['prefix' => '/email', 'middleware' => ['role:Super Admin']], function () {
         Route::post('/create', 'MailController@store');
         Route::get('/list', 'MailController@getMail');
+        Route::get('/schedulelist', 'MailController@getMailSchedule');
+        Route::post('/schedule', 'MailController@store_schedule');
+        
     });
     
     
