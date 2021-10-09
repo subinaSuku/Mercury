@@ -133,7 +133,7 @@
                     .then((response) => {
                         console.log(response);
                         this.form = response.data;
-                        // this.form.password = response.password;
+                         this.form.password = response.password;
                     });
             },
 

@@ -99,7 +99,7 @@
                     .then((response) => {
                         this.errors = null;
                         this.listItems();
-                        //this.viewItem(response.data.id);
+                        this.viewItem(response.data.id);
                     }).catch((error) => {
                         this.errors = typeof error.response.data.errors !== 'undefined' ? error.response.data
                             .errors : null;

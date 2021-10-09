@@ -8,8 +8,8 @@ use App\Models\MailSchedule;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Validator;
-
-use Crypt;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Crypt;
 use DB;
 
 
@@ -19,10 +19,10 @@ class MailController extends Controller
     public function getMail(){
       try{
         $mail= MailConfig::orderBy('updated_at','desc')->first();
-         //$password = Crypt::decryptString($mail->password);
+         $password = Crypt::decryptString($mail->password);
        
          $this->response["data"] = $mail;
-        // $this->response["password"] = $password;
+        $this->response["password"] = $password;
        
        return $this->successResponse($this->response);
    }
@@ -66,7 +66,7 @@ class MailController extends Controller
 			$from_name = $request->input('from_name');
 			$encryption = $request->input('encryption');
 			$username = $request->input('username');
-			$password =  $request->input('password');
+			$password =  Crypt::encryptString($request->input('password'));
 		
 			// Hash::check($request->newPasswordAtLogin, $hashedPassword)
 
@@ -79,6 +79,8 @@ class MailController extends Controller
 				$mail->encryption = $encryption;
 				$mail->username = $username;
 				$mail->password = $password;
+                $mail->created_at = Carbon::now();
+                $mail->updated_at = Carbon::now();
 
 				$mail->save();
                 
